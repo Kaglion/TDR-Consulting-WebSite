@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ------nav------ */
+
+.top-bar {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+.top-bar span {
+  font-size: 18px;
+  margin-left: 2rem;
+}
+
+.top-bar .dropdown {
+  margin-right: 2rem;
+}
+
+.top-bar-icons {
+  display: flex;
+  margin: 0.5rem 1rem;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+nav {
+  background-color: #ffffff;
+}
+
+#navbarNav {
+  margin-left: 20%;
+}
+
+.nav-item a {
+  color: #515151;
+}
+
+.logo {
+  height: 8%;
+  width: 8%;
+  margin: 0.5% 6% 0.5% 6%;
+}
+
+.nav-link {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #343434;
+}
+
+ul li:hover {
+  color: #1d6cdc;
+}
+
+/* ------services------ */
+.services-section {
+  padding: 60px 0;
+}
+.services-card {
+  margin-bottom: 30px;
+}
+.services-card img {
+  height: 200px;
+  object-fit: cover;
+}
