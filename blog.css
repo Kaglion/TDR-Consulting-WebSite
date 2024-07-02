@@ -27,25 +27,25 @@ body {
   
   .blog-post {
     display: flex;
-    flex-direction: row; /* Stack content on top of image */
+    flex-direction: row;
     margin-bottom: 60px;
     justify-content: center;
   }
   
   .blog-post img {
-    width:110%; /* Adjust image width as needed */
-    margin-bottom: 0; /* Remove margin below image */
-    border-radius: 5px; /* Add subtle rounded corners */
+    width:110%; 
+    margin-bottom: 0; 
+    border-radius: 5px;
   }
   
   .blog-post h3 {
-    font-size: 1.2em; /* Slightly larger title text */
-    margin: 15px 0; /* Reduce spacing above and below title */
+    font-size: 1.2em; 
+    margin: 15px 0; 
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: #fff; /* White text for readability */
-    padding: 5px 10px; /* Reduce padding for text within title area */
-    text-align: center; /* Center title text horizontally */
-    width: 60%; /* Match image width for full coverage */
+    color: #fff; 
+    padding: 5px 10px;
+    text-align: center; 
+    width: 60%; 
   }
   
   .blog-post p {
