@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .blog-banner {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .blog-banner h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  
+  .blog-content {
+    margin-top: 50px;
+  }
+  
+  .blog-post {
+    display: flex;
+    flex-direction: row; /* Stack content on top of image */
+    margin-bottom: 60px;
+    justify-content: center;
+  }
+  
+  .blog-post img {
+    width:110%; /* Adjust image width as needed */
+    margin-bottom: 0; /* Remove margin below image */
+    border-radius: 5px; /* Add subtle rounded corners */
+  }
+  
+  .blog-post h3 {
+    font-size: 1.2em; /* Slightly larger title text */
+    margin: 15px 0; /* Reduce spacing above and below title */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff; /* White text for readability */
+    padding: 5px 10px; /* Reduce padding for text within title area */
+    text-align: center; /* Center title text horizontally */
+    width: 60%; /* Match image width for full coverage */
+  }
+  
+  .blog-post p {
+    line-height: 1.5; /* Adjust line spacing for better readability */
+    margin-bottom: 80px;
+    text-align: justify;
+  }
+  
+  .blog-post a {
+    background-color: #5a9de4;
+    color: #fff;
+    padding: 20px 50px;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  .about-us {
+    margin-top: 50px;
+  }
+  
+  .about-us h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
