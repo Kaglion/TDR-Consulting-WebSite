@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* ------nav------ */
 
 .top-bar {
   background-color: #fafafa;
@@ -32,8 +30,8 @@ nav {
   margin-left: 20%;
 }
 
-.nav-item .tapcolor {
-  color: #ffc400;
+.nav-item a {
+  color: #515151;
 }
 
 .logo {
@@ -50,18 +48,10 @@ nav {
   color: #343434;
 }
 
-.nav-item a:hover {
-  color: #1d6cdc;
+ul .tapcolor{
+  color: #ffc400;
 }
 
-/* ------services------ */
-.services-section {
-  padding: 60px 0;
-}
-.services-card {
-  margin-bottom: 30px;
-}
-.services-card img {
-  height: 200px;
-  object-fit: cover;
+ul li:hover {
+  color: #1d6cdc;
 }

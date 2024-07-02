@@ -20,6 +20,8 @@ body {
   background-color: #eaeaea;
 }
 
+/* ------------Navbar------------ */
+
 .top-bar {
   background-color: #fafafa;
   display: flex;
@@ -68,9 +70,15 @@ nav {
   color: #343434;
 }
 
-ul li:hover {
+ul .tapcolor{
+  color: #ffc400;
+}
+
+.nav-item a:hover {
   color: #1d6cdc;
 }
+
+/* ------------Home section------------ */
 
 .home {
   width: 100%;
@@ -128,6 +136,8 @@ ul li:hover {
   color: #ffffff;
   border-radius: 4px;
 }
+
+/* -----------------Link to form--------------- */
 
 .consultation-form {
   background-color: #ffffff;
@@ -300,6 +310,8 @@ ul li:hover {
 .footer-col .links li {
   list-style: none;
   margin-bottom: 10px;
+  color: #bfbfbf;
+
 }
 .footer-col .links li a {
   text-decoration: none;
