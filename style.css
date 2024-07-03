@@ -18,6 +18,7 @@ html::-webkit-scrollbar {
 
 body {
   background-color: #eaeaea;
+  padding-top: 150px;
 }
 
 /* ------------Navbar------------ */
@@ -28,15 +29,11 @@ body {
   justify-content: space-between;
   padding: 4px;
 }
+
 .top-bar span {
   font-size: 18px;
   margin-left: 2rem;
 }
-
-.top-bar .dropdown {
-  margin-right: 2rem;
-}
-
 .top-bar-icons {
   display: flex;
   margin: 0.5rem 1rem;
@@ -70,12 +67,12 @@ nav {
   color: #343434;
 }
 
-ul .tapcolor{
+ul .tapcolor {
   color: #ffc400;
 }
 
 .nav-item a:hover {
-  color: #1d6cdc;
+  color: #1261cf;
 }
 
 /* ------------Home section------------ */
@@ -86,7 +83,7 @@ ul .tapcolor{
   position: relative;
   background-image: url(img/bg-img.jpg);
   background-repeat: no-repeat;
-  background-position: center right top;
+  background-position: center  top;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -95,10 +92,6 @@ ul .tapcolor{
 
 .container {
   margin: 2rem;
-}
-.text h1 {
-  font-size: 55px;
-  font-weight: 600;
 }
 
 .text span {
@@ -113,13 +106,7 @@ ul .tapcolor{
 .button a {
   text-decoration: none;
 }
-.btn {
-  padding: 10px;
-  font-size: 18px;
-  background-color: #003f97;
-  color: #fff;
-  text-decoration: none;
-}
+
 .btn1 {
   background-color: #ffffff;
   padding: 10px;
@@ -181,18 +168,16 @@ ul .tapcolor{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  display: flex;
+  flex-flow: wrap;
 }
 .text-box {
   text-align: center;
 }
 .text-box h1 {
   margin: 0;
-  font-size: 2em;
 }
 .text-box p {
   margin-top: 5px;
-  font-size: 1em;
 }
 .text-box h1 {
   color: #ffc400;
@@ -211,15 +196,14 @@ ul .tapcolor{
 /* -----------partner section----------- */
 
 .partners {
-  padding: 10px 0;
-  background-color: #f9f9f9;
+  /* padding: 5px 0; */
+  background-color: #fff;
 }
 .heading {
   margin-bottom: 20px;
 }
 
 .heading h1 {
-  font-size: 2.5em;
   margin-bottom: 10px;
   color: #4c4c4c;
 }
@@ -227,14 +211,19 @@ ul .tapcolor{
 .swiper-container {
   width: 100%;
   padding: 20px 0;
+  gap: -5%;
 }
 .swiper-wrapper {
   display: flex;
+   
 }
 .swiper-slide {
   display: flex;
-  justify-content: center;
+ justify-content: center;
+  align-items: center;
   transition: transform 0.3s ease-in-out;
+  margin: 0% 1% -2% 1%;
+
 }
 
 .swiper-slide .box {
@@ -255,7 +244,10 @@ ul .tapcolor{
   opacity: 0.7;
 }
 .swiper-pagination {
+  position: fixed;
+  top: 5%;
   display: none;
+  
 }
 .swiper-slide img {
   max-width: 100px;
@@ -267,12 +259,7 @@ ul .tapcolor{
   border-radius: 50%;
   margin-bottom: 15px;
 }
-.stars {
-  margin: 10px 0;
-}
-.star-icon {
-  color: #ffdd00;
-}
+
 .box h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -290,18 +277,29 @@ ul .tapcolor{
   bottom: 0;
   width: 100%;
   background: #10182f;
-  border-radius: 6px 6px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 .footer .footer-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 3.5rem;
-  padding: 60px;
+  gap: 1rem;
+  padding: 50px;
+  
 }
+
+.footer-col{
+  width: 30%;
+}
+
+.d-flex{
+  margin-top: -2rem;
+
+}
+
 .footer-row .footer-col h4 {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .footer-col .links {
@@ -311,7 +309,6 @@ ul .tapcolor{
   list-style: none;
   margin-bottom: 10px;
   color: #bfbfbf;
-
 }
 .footer-col .links li a {
   text-decoration: none;
@@ -325,40 +322,13 @@ ul .tapcolor{
   color: #bfbfbf;
   max-width: 300px;
 }
-.footer-col form {
-  display: flex;
-  gap: 5px;
+.footer-col .rounded-circle{
+  width: 25%;
 }
-.footer-col input {
-  height: 40px;
-  border-radius: 6px;
-  background: none;
-  width: 100%;
-  outline: none;
-  border: 1px solid #7489c6;
-  caret-color: #fff;
-  color: #fff;
-  padding-left: 10px;
-}
-.footer-col input::placeholder {
-  color: #ccc;
-}
-.footer-col form button {
-  background: #fff;
-  outline: none;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: 0.2s ease;
-}
-.footer-col form button:hover {
-  background: #cecccc;
-}
+
 .footer-col .icons {
   display: flex;
-  margin-top: 30px;
+  margin: 70px 0px 0px 50px;
   font-size: 25px;
   gap: 30px;
   cursor: pointer;
@@ -369,6 +339,13 @@ ul .tapcolor{
 .footer-col .icons .icon:hover {
   color: #fff;
 }
+
+.btn-outline-info{
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+}
+
 @media (max-width: 768px) {
   .footer {
     position: relative;

@@ -30,3 +30,17 @@
                 },
             },
         });
+
+
+ window.addEventListener('scroll', function() {
+            var fixedElement = document.getElementById('fixedElement');
+            var targetSection = document.getElementById('home');
+            var targetSectionTop = targetSection.getBoundingClientRect().top;
+            var targetSectionBottom = targetSection.getBoundingClientRect().bottom;
+
+            if (targetSectionTop <= window.innerHeight && targetSectionBottom >= 0) {
+                fixedElement.style.display = 'none';
+            } else {
+                fixedElement.style.display = 'block';
+            }
+        });

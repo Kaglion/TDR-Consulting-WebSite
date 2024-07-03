@@ -12,11 +12,6 @@
   font-size: 18px;
   margin-left: 2rem;
 }
-
-.top-bar .dropdown {
-  margin-right: 2rem;
-}
-
 .top-bar-icons {
   display: flex;
   margin: 0.5rem 1rem;
@@ -51,7 +46,6 @@ ul .tapcolor{
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #343434;
 }
 
 ul li:hover {
