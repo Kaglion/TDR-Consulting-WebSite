@@ -1,77 +1,113 @@
+/* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .blog-banner {
-    background-color: #f2f2f2;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  .blog-banner h2 { 
-    font-size: 2em;
-    margin-bottom: 0;
-  }
-  
-  .blog-content {
-    margin-top: 50px;
-  }
-  
-  .blog-post {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 60px;
-    justify-content: center;
-  }
-  
-  .blog-post img {
-    width:110%; 
-    margin-bottom: 0; 
-    border-radius: 5px;
-  }
-  
-  .blog-post h3 {
-    font-size: 1.2em; 
-    margin: 15px 0; 
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: #fff; 
-    padding: 5px 10px;
-    text-align: center; 
-    width: 60%; 
-  }
-  
-  .blog-post p {
-    line-height: 1.5; /* Adjust line spacing for better readability */
-    margin-bottom: 80px;
-    text-align: justify;
-  }
-  
-  .blog-post a {
-    background-color: #5a9de4;
-    color: #fff;
-    padding: 20px 50px;
-    text-decoration: none;
-    margin: 20px;
-  }
-  
-  .about-us {
-    margin-top: 50px;
-  }
-  
-  .about-us h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-  }
-  
-  .about-us p {
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9; /* Light background for contrast */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for main sections */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex; /* Use flexbox for the container */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: space-between; /* Space out the cards evenly */
+}
+
+/* Blog banner styling */
+.blog-banner {
+  background-color: #5a9de4; /* Blue background for the banner */
+  color: #fff; /* White text color */
+  padding: 50px 0;
+  text-align: center;
+  width: 100%; /* Ensure the banner takes full width */
+}
+
+.blog-banner h2 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+/* Blog content layout using Flexbox */
+.blog-content {
+  margin-top: 50px;
+  width: 100%; /* Ensure it takes the full width */
+}
+
+/* Blog post card styling */
+.blog-post {
+  background-color: #fff; /* White background for cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card depth */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  flex: 1 1 calc(30% - 20px); /* Cards take up 30% of the row width minus gap */
+  max-width: calc(30% - 20px); /* Maximum width to keep them aligned */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  margin-bottom: 20px; /* Space between rows */
+}
+
+/* Card hover effect */
+.blog-post:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Image within the card */
+.blog-post img {
+  width: 120%; /* Full width image */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+/* Title within the card */
+.blog-post h3 {
+  font-size: 1.5em;
+  margin: 15px; /* Space around the title */
+  color: #333; /* Darker text color */
+  text-align: center;
+}
+
+/* Paragraph text within the card */
+.blog-post p {
+  padding: 0 15px 15px; /* Padding inside the card */
+  text-align: justify; /* Justify text for a neat look */
+  flex-grow: 1; /* Allow the paragraph to grow and fill available space */
+}
+
+/* About us section */
+.about-us {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-us h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #5a9de4; /* Matching the banner color */
+}
+
+.about-us p {
+  line-height: 1.5;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+  padding: 20px 0;
+  text-align: center;
+  width: 100%; /* Ensure footer takes full width */
+}
+
+.footer p {
+  margin: 0;
+}
