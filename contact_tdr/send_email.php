@@ -10,11 +10,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $subject = htmlspecialchars($_POST['subject']);
     $message = htmlspecialchars($_POST['message']);
     
     try {
         // Create a new PHPMailer instance
         $mail = new PHPMailer(true);
+
+        // Enable SMTP debugging (set to 0 in production)
+        $mail->SMTPDebug = 0; // Set to 2 for detailed output
         
         // Server settings for Gmail SMTP
         $mail->isSMTP();
@@ -32,12 +37,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Content
         $mail->isHTML(true); // Set email format to HTML
         $mail->Subject = "Contact Form Submission from $name";
-        $mail->Body = "<html><body>";
-        $mail->Body .= "<h2>Contact Form Submission</h2>";
-        $mail->Body .= "<p><strong>Name:</strong> $name</p>";
-        $mail->Body .= "<p><strong>Email:</strong> $email</p>";
-        $mail->Body .= "<p><strong>Message:</strong><br>" . nl2br($message) . "</p>";
-        $mail->Body .= "</body></html>";
+        $mail->Body = "
+        <html>
+        <body>
+            <h2>Contact Form Submission</h2>
+            <p><strong>Name:</strong> $name</p>
+            <p><strong>Phone:</strong> $phone</p>
+            <p><strong>Email:</strong> $email</p>
+            <p><strong>Subject:</strong> $subject</p>
+            <p><strong>Message:</strong><br>" . nl2br($message) . "</p>
+        </body>
+        </html>";
+
+        // Plain text version of the email
+        $mail->AltBody = "
+        Contact Form Submission
+        
+        Name: $name
+        Phone: $phone
+        Email: $email
+        Subject: $subject
+        Message: $message";
 
         // Send email
         $mail->send();
@@ -49,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['alert_type'] = 'error';
     }
     
-    header('Location: contact_form.php');
+    header('Location: contactform.php');
     exit();
 }
 ?>
