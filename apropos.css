@@ -12,16 +12,14 @@
   font-size: 18px;
   margin-left: 2rem;
 }
-
-.top-bar .dropdown {
-  margin-right: 2rem;
-}
-
-.top-bar-icons {
+.top-bar-icons{
   display: flex;
   margin: 0.5rem 1rem;
   gap: 2rem;
   cursor: pointer;
+}
+.top-bar-icons a{
+  color: #a5a5a5;
 }
 
 nav {
@@ -36,6 +34,10 @@ nav {
   color: #515151;
 }
 
+ul .tapcolor{
+  color: #ffc400;
+}
+
 .logo {
   height: 8%;
   width: 8%;
@@ -47,7 +49,6 @@ nav {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #343434;
 }
 
 ul li:hover {
