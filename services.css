@@ -13,13 +13,13 @@
   margin-left: 2rem;
 }
 
-.top-bar-icons{
+.top-bar-icons {
   display: flex;
   margin: 0.5rem 1rem;
   gap: 2rem;
   cursor: pointer;
 }
-.top-bar-icons a{
+.top-bar-icons a {
   color: #a5a5a5;
 }
 nav {
@@ -62,4 +62,13 @@ nav {
 .services-card img {
   height: 200px;
   object-fit: cover;
+}
+
+@media (max-width: 375px) {
+  .logo {
+    max-width: 300px;
+  }
+  .top-bar span {
+    font-size: 12px;
+  }
 }

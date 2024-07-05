@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f8f9fa;
 }
@@ -13,19 +19,14 @@ body {
   margin-left: 2rem;
 }
 
-.top-bar-icons{
+.top-bar-icons {
   display: flex;
   margin: 0.5rem 1rem;
   gap: 2rem;
   cursor: pointer;
 }
-.top-bar-icons a{
+.top-bar-icons a {
   color: #a5a5a5;
-}
-
-#map {
-  height: 400px;
-  width: 100%;
 }
 
 nav {
@@ -88,4 +89,13 @@ ul li:hover {
   color: white;
   padding: 20px 0;
   text-align: center;
+}
+
+@media (max-width: 375px) {
+  .logo {
+    max-width: 300px;
+  }
+  .top-bar span {
+    font-size: 12px;
+  }
 }

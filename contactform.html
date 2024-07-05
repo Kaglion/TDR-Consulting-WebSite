@@ -10,6 +10,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="contactform.css">
   <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
 
 </head>
 
@@ -18,13 +21,13 @@
   <div class="header">
     <div class="top-bar">
       <span class="fw-medium">Bienvenue aux services de consultation du TDR Sarl</span>
-    
+
       <!-- Top bar -->
-       <div class="top-bar-icons">
-                <a href="mailto:cabinet.tdr.consulting@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
-               <a href="https://www.facebook.com/share/wyy9BJZTiQ34b3Mn/?mibextid=qi2Omg"><i class="bi bi-facebook"></i> </a> 
-                <a href="https://www.linkedin.com/company/tdr-consuling-sarl/"><i class="bi bi-linkedin"></i></a>
-            </div>
+      <div class="top-bar-icons">
+        <a href="mailto:cabinet.tdr.consulting@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
+        <a href="https://www.facebook.com/share/wyy9BJZTiQ34b3Mn/?mibextid=qi2Omg"><i class="bi bi-facebook"></i> </a>
+        <a href="https://www.linkedin.com/company/tdr-consuling-sarl/"><i class="bi bi-linkedin"></i></a>
+      </div>
     </div>
 
     <!-- nav bar -->
@@ -33,7 +36,7 @@
         <img src="img/logo.jpg" alt="logo" class="logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">  </span>
+          <span class="navbar-toggler-icon"> </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
@@ -61,76 +64,68 @@
 
   <div class="container">
     <h3 class="text-secondary my-2">Notre emplacement</h3>
-    <div id="map"></div>
-  </div>
 
+    <div id="map" style="width: 100%; height: 400px;"></div>
 
-  <div class="container bg-white ">
-    <h1 class="contact-title p-2 text-secondary">Contactez-Nous</h1>
-    <div class="row p-4">
-      <!-- Contact Information -->
-      <div class="col-lg-6 mb-4">
-        <h4 class="text-secondary">Nos Coordonnées</h4>
-        <p><strong><i class="bi bi-geo-alt-fill"></i> Adresse:</strong> Siège, Yaoundé, Carrefour Biyem-Assi, Immeuble Afriland first bank</p>
-        <p><strong><i class="bi bi-telephone-fill"></i> Téléphone:</strong> +237 650 39 28 76 - 656 23 37 27.</p>
-        <p><strong><i class="bi bi-envelope-at-fill"></i> Email:</strong> cabinet.tdr.consulting@gmail.com</p>
-        <h4 class="text-secondary">Heures de travail</h4>
-        <p>Lundi - vendredi : 8h - 18h</p>
-        <p>Samedi : 9h - 14h</p>
-        <p>Dimanche : Fermé</p>
-      </div>
-      <!-- Contact Form -->
-      <div class="col-lg-6 mb-4">
-        <form>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="name" placeholder="Nom*">
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" id="email" placeholder="Email*">
-          </div>
-          <div class="mb-3">
-            <input type="tel" class="form-control" id="phone" placeholder="Numéro de téléphone">
-          </div>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="subject" placeholder="Objet*">
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" id="message" rows="5" placeholder="Besoin*"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary w-100">Envoyer</button>
-        </form>
+    <div class="container bg-white ">
+      <h1 class="contact-title p-2 text-secondary">Contactez-Nous</h1>
+      <div class="row p-4">
+        <!-- Contact Information -->
+        <div class="col-lg-6 mb-4">
+          <h4 class="text-secondary">Nos Coordonnées</h4>
+          <p><strong><i class="bi bi-geo-alt-fill"></i> Adresse:</strong> Siège, Yaoundé, Carrefour Biyem-Assi, Immeuble
+            Afriland first bank</p>
+          <p><strong><i class="bi bi-telephone-fill"></i> Téléphone:</strong> +237 650 39 28 76 - 656 23 37 27.</p>
+          <p><strong><i class="bi bi-envelope-at-fill"></i> Email:</strong> cabinet.tdr.consulting@gmail.com</p>
+          <h4 class="text-secondary">Heures de travail</h4>
+          <p>Lundi - vendredi : 8h - 18h</p>
+          <p>Samedi : 9h - 14h</p>
+          <p>Dimanche : Fermé</p>
+        </div>
+        <!-- Contact Form -->
+        <div class="col-lg-6 mb-4">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Nom*">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Email*">
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" id="phone" placeholder="Numéro de téléphone">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="subject" placeholder="Objet*">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" rows="5" placeholder="Besoin*"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
 
-  <footer class="footer mt-5">
-    <div class="container">
+    <footer class="footer mt-5">
       <p>&copy; 2024 TDR Consulting Sarl. All rights reserved.</p>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Bootstrap Bundle JS -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-  <script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of the consulting agency (example: New York City)
-      const agencyLocation = { lat: 40.7128, lng: -74.0060 };
-      // The map, centered at the agency location
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
-        center: agencyLocation,
-      });
-      // The marker, positioned at the agency location
-      const marker = new google.maps.Marker({
-        position: agencyLocation,
-        map: map,
-      });
-    }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap Bundle JS -->
+
+    <script>
+      var map = L.map('map').setView([3.8495252, 11.4831218], 13);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+      L.marker([3.8495252, 11.4831218]).addTo(map)
+        .bindPopup('TDR Consulting <br> Sarl/IFCE.')
+        .openPopup();
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 </body>
 
 </html>
