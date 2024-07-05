@@ -34,11 +34,14 @@ body {
   font-size: 18px;
   margin-left: 2rem;
 }
-.top-bar-icons {
+.top-bar-icons{
   display: flex;
   margin: 0.5rem 1rem;
   gap: 2rem;
   cursor: pointer;
+}
+.top-bar-icons a{
+  color: #a5a5a5;
 }
 
 nav {
