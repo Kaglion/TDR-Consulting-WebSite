@@ -82,7 +82,7 @@ ul .tapcolor {
 
 .home {
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vmin;
   position: relative;
   background-image: url(img/bg-img.jpg);
   background-repeat: no-repeat;
@@ -441,10 +441,10 @@ ul .tapcolor {
     font-weight: 600;
   }
   .button {
-    margin: 2rem 0rem 0rem 2.5rem;
+    margin: 2rem 0rem 0rem 1rem;
   }
   .logo {
-    max-width: 300px;
+    max-width: 100%;
   }
   .top-bar span {
     font-size: 12px;
