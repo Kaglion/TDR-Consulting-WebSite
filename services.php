@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php session_start(); ?>
+
+<!DOCTYPE php>
+<php lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - TDR Consulting</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="services.css">
     <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+
 
 </head>
 
@@ -17,9 +24,10 @@
         <div class="top-bar">
             <span class="fw-medium">Bienvenue aux services de consultation du TDR Sarl</span>
 
-             <div class="top-bar-icons">
+            <div class="top-bar-icons">
                 <a href="mailto:cabinet.tdr.consulting@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
-               <a href="https://www.facebook.com/share/wyy9BJZTiQ34b3Mn/?mibextid=qi2Omg"><i class="bi bi-facebook"></i> </a> 
+                <a href="https://www.facebook.com/share/wyy9BJZTiQ34b3Mn/?mibextid=qi2Omg"><i
+                        class="bi bi-facebook"></i> </a>
                 <a href="https://www.linkedin.com/company/tdr-consuling-sarl/"><i class="bi bi-linkedin"></i></a>
             </div>
         </div>
@@ -34,21 +42,21 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html"><i class="bi bi-house-fill"></i> Accueil</a>
+                            <a class="nav-link" href="index.php"><i class="bi bi-house-fill"></i> Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="apropos.html"><i class="bi bi-people-fill"></i> A Propos De
+                            <a class="nav-link" href="apropos.php"><i class="bi bi-people-fill"></i> A Propos De
                                 Nous</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tapcolor" href="services.html"><i class="bi bi-card-text"></i>
+                            <a class="nav-link tapcolor" href="services.php"><i class="bi bi-card-text"></i>
                                 Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
+                            <a class="nav-link" href="blog.php"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contactform.html"><i class="bi bi-telephone-fill"></i>
+                            <a class="nav-link" href="contactform.php"><i class="bi bi-telephone-fill"></i>
                                 Contactez-Nous</a>
                         </li>
                     </ul>
@@ -70,7 +78,7 @@
             </div>
             <div class="row">
                 <!-- Service 1 -->
-                <div class="col-lg-4 col-md-6 services-card">
+                <div class="col-lg-4 col-md-6 services-card service-item">
                     <div class="card h-100">
                         <img src="img/service1.jpg" class="card-img-top" alt="Service1">
                         <div class="card-body">
@@ -82,7 +90,7 @@
                     </div>
                 </div>
                 <!-- Service 2 -->
-                <div class="col-lg-4 col-md-6 services-card">
+                <div class="col-lg-4 col-md-6 services-card service-item">
                     <div class="card h-100">
                         <img src="img/service2.jpg" class="card-img-top" alt="Service2">
                         <div class="card-body">
@@ -94,7 +102,7 @@
                     </div>
                 </div>
                 <!-- Service 3 -->
-                <div class="col-lg-4 col-md-6 services-card">
+                <div class="col-lg-4 col-md-6 services-card service-item">
                     <div class="card h-100">
                         <img src="img/service3.jpg" class="card-img-top" alt="Service3">
                         <div class="card-body">
@@ -107,7 +115,7 @@
                     </div>
                 </div>
                 <!-- Service 4 -->
-                <div class="col-lg-4 col-md-6 services-card">
+                <div class="col-lg-4 col-md-6 services-card service-item">
                     <div class="card h-100">
                         <img src="img/service4.jpg" class="card-img-top" alt="Service4">
                         <div class="card-body">
@@ -120,7 +128,7 @@
                     </div>
                 </div>
                 <!-- Service 5 -->
-                <div class="col-lg-4 col-md-6 services-card">
+                <div class="col-lg-4 col-md-6 services-card service-item">
                     <div class="card h-100">
                         <img src="img/service5.jpg" class="card-img-top" alt="Service5">
                         <div class="card-body">
@@ -134,7 +142,7 @@
                     </div>
                 </div>
                 <!-- Service 6 -->
-                <div class="col-lg-4 col-md-6 services-card">
+                <div class="col-lg-4 col-md-6 services-card service-item">
                     <div class="card h-100">
                         <img src="img/service6.jpg" class="card-img-top" alt="Service6">
                         <div class="card-body">
@@ -163,11 +171,9 @@
 
                 <div class="card-one-details" id="card-one">
                     <h3 class="title">Etudes statistiques et socioéconomiques</h3>
-                    <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is
-                        affected
-                        by our utilities. Classes are applied to the element itself or sometimes the parent element.
-                        These
-                        classes can be customized as needed with our utility API.</p>
+                    <p class="lh-sm">Accompagnement des organisations à la conception des notes méthodologiques de
+mise en œuvre des opérations de collecte et de gestion des données ainsi que les outils
+de collecte associés.</p>
                     <h5>Appui à la réalisation des études statistiques</h5>
                     <ul>
                         <li class="lh-sm">
@@ -331,9 +337,9 @@
     </footer>
 
     <!-- Script links -->
-    <script src="js/all.js"></script>
+    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 
-</html>
+</php>

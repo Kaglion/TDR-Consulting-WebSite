@@ -18,9 +18,10 @@
             <span class="fw-medium">Bienvenue aux services de consultation du TDR Sarl</span>
 
             <!-- Top bar -->
-             <div class="top-bar-icons">
+            <div class="top-bar-icons">
                 <a href="mailto:cabinet.tdr.consulting@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
-               <a href="https://www.facebook.com/share/wyy9BJZTiQ34b3Mn/?mibextid=qi2Omg"><i class="bi bi-facebook"></i> </a> 
+                <a href="https://www.facebook.com/share/wyy9BJZTiQ34b3Mn/?mibextid=qi2Omg"><i
+                        class="bi bi-facebook"></i> </a>
                 <a href="https://www.linkedin.com/company/tdr-consuling-sarl/"><i class="bi bi-linkedin"></i></a>
             </div>
         </div>
@@ -36,20 +37,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link " href="index.html"><i class="bi bi-house-fill"></i> Accueil</a>
+                            <a class="nav-link " href="index.php"><i class="bi bi-house-fill"></i> Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="apropos.html"><i class="bi bi-people-fill"></i> A Propos De
+                            <a class="nav-link" href="apropos.php"><i class="bi bi-people-fill"></i> A Propos De
                                 Nous</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html"><i class="bi bi-card-text"></i> Services</a>
+                            <a class="nav-link" href="services.php"><i class="bi bi-card-text"></i> Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link tapcolor" href="#"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="contactform.html"><i class="bi bi-telephone-fill"></i>
+                            <a class="nav-link " href="contactform.php"><i class="bi bi-telephone-fill"></i>
                                 Contactez-Nous</a>
                         </li>
                     </ul>
@@ -70,7 +71,9 @@
                     <img src="img/blog-img1.jpg" class="card-img-top" alt="Blog-Image-1">
                     <div class="card-body">
                         <h5 class="card-title">Formation Certifiante en Statistique</h5>
-                        <p class="card-text"> Développer les aptitudes des participants aux techniques de collecte, de traitement et d’analyse de données statistiques pour un développement soutenu et durable.</p>
+                        <p class="card-text"> Développer les aptitudes des participants aux techniques de collecte, de
+                            traitement et d’analyse de données statistiques pour un développement soutenu et durable.
+                        </p>
                         <!-- <a href="#" class="btn btn-primary">Read More</a> -->
                     </div>
                 </div>
@@ -80,7 +83,9 @@
                     <img src="img/blog-img2.jpg" class="card-img-top" alt="Blog-Image-2">
                     <div class="card-body">
                         <h5 class="card-title">Etude conduite par le Cabinet TDR Consulting Sarl</h5>
-                        <p class="card-text">Atelier de restitution des résultats de l’Etude Stratégique Pour La Mise En Place Du Système Permanent et Integre des statistiques Agropastorales Pour le Compte de Recensement General De L’Agriculture et de L’Elevage</p>
+                        <p class="card-text">Atelier de restitution des résultats de l’Etude Stratégique Pour La Mise En
+                            Place Du Système Permanent et Integre des statistiques Agropastorales Pour le Compte de
+                            Recensement General De L’Agriculture et de L’Elevage</p>
                         <!-- <a href="#" class="btn btn-primary">Read More</a> -->
                     </div>
                 </div>
@@ -89,8 +94,12 @@
                 <div class="card">
                     <img src="img/blog-img3.jpg" class="card-img-top" alt="Blog-Image-3">
                     <div class="card-body">
-                        <h5 class="card-title">Partenariat gagnant-gagnant TDR Consulting Sarl--𝐄𝐗𝐏𝐄𝐑𝐓𝟑𝐃𝐄𝐕 𝐒𝐀𝐑𝐋--𝐂𝐄𝐑𝐃</h5>
-                        <p class="card-text">Notre partenariat avec l'entreprise EXPERT3DEV SARL qui a mis sur pied un logiciel MATRIIX ERP qui au-delà d’un simple logiciel, est un progiciel calqué sur les spécificités et les réalités des entreprises Camerounaises et de la sous région Afrique Centrale.</p>
+                        <h5 class="card-title">Partenariat gagnant-gagnant TDR Consulting Sarl--𝐄𝐗𝐏𝐄𝐑𝐓𝟑𝐃𝐄𝐕
+                            𝐒𝐀𝐑𝐋--𝐂𝐄𝐑𝐃</h5>
+                        <p class="card-text">Notre partenariat avec l'entreprise EXPERT3DEV SARL qui a mis sur pied un
+                            logiciel MATRIIX ERP qui au-delà d’un simple logiciel, est un progiciel calqué sur les
+                            spécificités et les réalités des entreprises Camerounaises et de la sous région Afrique
+                            Centrale.</p>
                         <!-- <a href="#" class="btn btn-primary">Read More</a> -->
                     </div>
                 </div>

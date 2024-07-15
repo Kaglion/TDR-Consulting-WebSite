@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -19,7 +21,8 @@
             <span class="fw-medium">Bienvenue aux services de consultation du TDR Sarl</span>
             <div class="top-bar-icons">
                 <a href="mailto:cabinet.tdr.consulting@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
-               <a href="https://www.facebook.com/share/wyy9BJZTiQ34b3Mn/?mibextid=qi2Omg"><i class="bi bi-facebook"></i> </a> 
+                <a href="https://www.facebook.com/share/wyy9BJZTiQ34b3Mn/?mibextid=qi2Omg"><i
+                        class="bi bi-facebook"></i> </a>
                 <a href="https://www.linkedin.com/company/tdr-consuling-sarl/"><i class="bi bi-linkedin"></i></a>
             </div>
         </div>
@@ -34,20 +37,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html"><i class="bi bi-house-fill"></i> Accueil</a>
+                            <a class="nav-link" href="index.php"><i class="bi bi-house-fill"></i> Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tapcolor" href="apropos.html"><i class="bi bi-people-fill"></i> A Propos
+                            <a class="nav-link tapcolor" href="apropos.php"><i class="bi bi-people-fill"></i> A Propos
                                 De Nous</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html"><i class="bi bi-card-text"></i> Services</a>
+                            <a class="nav-link" href="services.php"><i class="bi bi-card-text"></i> Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
+                            <a class="nav-link" href="blog.php"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contactform.html"><i class="bi bi-telephone-fill"></i>
+                            <a class="nav-link" href="contactform.php"><i class="bi bi-telephone-fill"></i>
                                 Contactez-Nous</a>
                         </li>
                     </ul>

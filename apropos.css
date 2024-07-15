@@ -12,13 +12,13 @@
   font-size: 18px;
   margin-left: 2rem;
 }
-.top-bar-icons{
+.top-bar-icons {
   display: flex;
   margin: 0.5rem 1rem;
   gap: 2rem;
   cursor: pointer;
 }
-.top-bar-icons a{
+.top-bar-icons a {
   color: #a5a5a5;
 }
 
@@ -34,7 +34,7 @@ nav {
   color: #515151;
 }
 
-ul .tapcolor{
+ul .tapcolor {
   color: #ffc400;
 }
 
@@ -77,4 +77,13 @@ ul li:hover {
   color: white;
   padding: 20px 0;
   text-align: center;
+}
+
+@media (max-width: 375px) {
+  .logo {
+    max-width: 300px;
+  }
+  .top-bar span {
+    font-size: 12px;
+  }
 }
