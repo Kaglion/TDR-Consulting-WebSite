@@ -10,6 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $subject = htmlspecialchars($_POST['subject']);
     $message = htmlspecialchars($_POST['message']);
     $subject = htmlspecialchars($_POST['subject']);
     
@@ -41,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <body>
             <h2>Contact Form Submission</h2>
             <p><strong>Name:</strong> $name</p>
+            <p><strong>Phone:</strong> $phone</p>
             <p><strong>Email:</strong> $email</p>
             <p><strong>Subject:</strong> $subject</p>
             <p><strong>Message:</strong><br>" . nl2br($message) . "</p>
@@ -50,8 +53,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Plain text version of the email
         $mail->AltBody = "
         Contact Form Submission
-
+        
         Name: $name
+        Phone: $phone
         Email: $email
         Subject: $subject
         Message: $message";
