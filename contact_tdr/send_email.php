@@ -1,76 +1,61 @@
 <?php
 session_start();
+require 'vendor/autoload.php'; // Path to PHPMailer's autoload.php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Require Composer's autoloader
-require 'vendor/autoload.php';
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collect form data
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $subject = htmlspecialchars($_POST['subject']);
-    $message = htmlspecialchars($_POST['message']);
-    $subject = htmlspecialchars($_POST['subject']);
-    
-    try {
-        // Create a new PHPMailer instance
+    $name = htmlspecialchars(trim($_POST['name']));
+    $email = htmlspecialchars(trim($_POST['email']));
+    $phone = htmlspecialchars(trim($_POST['phone']));
+    $subject = htmlspecialchars(trim($_POST['subject']));
+    $message = htmlspecialchars(trim($_POST['message']));
+
+    if (!empty($name) && !empty($email) && !empty($subject) && !empty($message)) {
         $mail = new PHPMailer(true);
 
-        // Enable SMTP debugging (set to 0 in production)
-        $mail->SMTPDebug = 0; // Set to 2 for detailed output
-        
-        // Server settings for Gmail SMTP
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'tsamofrancis283@gmail.com'; // Your Gmail address
-        $mail->Password = 'ooop swpz oipb fvuy'; // Your Gmail application-specific password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
-        
-        // Recipients
-        $mail->setFrom('tsamofrancis283@gmail.com', 'Mailer'); // Sender's email and name
-        $mail->addAddress('tsamofrancis283@gmail.com', 'Recipient'); // Recipient's email and name
+        try {
+            // Server settings
+            $mail->isSMTP();
+            $mail->Host       = 'smtp.gmail.com'; // Set the SMTP server to send through
+            $mail->SMTPAuth   = true;
+            $mail->Username   = 'tsamofrancis283@gmail.com'; // SMTP username
+            $mail->Password   = 'ooop swpz oipb fvuy'; // SMTP password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port       = 587;
 
-        // Content
-        $mail->isHTML(true); // Set email format to HTML
-        $mail->Subject = "Contact Form Submission from $name";
-        $mail->Body = "
-        <html>
-        <body>
-            <h2>Contact Form Submission</h2>
-            <p><strong>Name:</strong> $name</p>
-            <p><strong>Phone:</strong> $phone</p>
-            <p><strong>Email:</strong> $email</p>
-            <p><strong>Subject:</strong> $subject</p>
-            <p><strong>Message:</strong><br>" . nl2br($message) . "</p>
-        </body>
-        </html>";
+            // Recipients
+            $mail->setFrom($email, $name);
+            $mail->addAddress('tsamofrancis283@gmail.com'); // Add a recipient
 
-        // Plain text version of the email
-        $mail->AltBody = "
-        Contact Form Submission
-        
-        Name: $name
-        Phone: $phone
-        Email: $email
-        Subject: $subject
-        Message: $message";
+            // Content
+            $mail->isHTML(false);
+            $mail->Subject = "Nouveau message de contact: $subject";
+            $mail->Body    = "Vous avez reçu un nouveau message de contact.\n\n".
+                            "Nom: $name\n".
+                            "Email: $email\n".
+                            "Téléphone: $phone\n".
+                            "Sujet: $subject\n".
+                            "Message:\n$message";
 
-        // Send email
-        $mail->send();
-        $_SESSION['message'] = "Thank you for contacting us, $name. We will get back to you soon.";
-        $_SESSION['alert_type'] = 'success';
-        
-    } catch (Exception $e) {
-        $_SESSION['message'] = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-        $_SESSION['alert_type'] = 'error';
+            $mail->send();
+            $_SESSION['message'] = "Votre message a été envoyé avec succès.";
+            $_SESSION['alert_type'] = "success";
+        } catch (Exception $e) {
+            $_SESSION['message'] = "Il y a eu une erreur lors de l'envoi de votre message. Veuillez réessayer.";
+            $_SESSION['alert_type'] = "error";
+            error_log("Message could not be sent. Mailer Error: {$mail->ErrorInfo}");
+        }
+    } else {
+        $_SESSION['message'] = "Veuillez remplir tous les champs obligatoires.";
+        $_SESSION['alert_type'] = "error";
     }
-    
-    header('Location: contactform.php');
+
+    header('Location: ../contactform.php');
+    exit();
+} else {
+    header('Location: ../contactform.php');
     exit();
 }
 ?>
