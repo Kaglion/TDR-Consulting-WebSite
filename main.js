@@ -52,3 +52,5 @@ ScrollReveal().reveal(".service-item", {
   origin: "bottom",
   reset: true,
 });
+
+//send message

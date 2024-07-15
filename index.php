@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -46,17 +48,17 @@
                             <a class="nav-link tapcolor" href="#home"><i class="bi bi-house-fill "></i> Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="apropos.html"><i class="bi bi-people-fill"></i> A Propos De
+                            <a class="nav-link" href="apropos.php"><i class="bi bi-people-fill"></i> A Propos De
                                 Nous</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html"><i class="bi bi-card-text"></i> Services</a>
+                            <a class="nav-link" href="services.php"><i class="bi bi-card-text"></i> Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
+                            <a class="nav-link" href="blog.php"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contactform.html"><i class="bi bi-telephone-fill"></i>
+                            <a class="nav-link" href="contactform.php"><i class="bi bi-telephone-fill"></i>
                                 Contactez-Nous</a>
                         </li>
                     </ul>
@@ -77,8 +79,8 @@
                 </p>
             </div>
             <div class="button slide-in-Top ">
-                <a href="services.html" class="btn1">Nos services</a>
-                <a href="apropos.html" class="btn2 btn-primary">Notre compagnie</a>
+                <a href="services.php" class="btn1">Nos services</a>
+                <a href="apropos.php" class="btn2 btn-primary">Notre compagnie</a>
             </div>
         </div>
     </section>
@@ -89,7 +91,7 @@
         <div class="consultation-form">
             <h2 class="text-secondary">Votre projet, Notre challenge</h2>
             <p>Cliquez ici et soumettez vos coordonnées et nous vous contacterons sous peu.</p>
-            <a href="contactform.html" class="btn btn-primary">Contactez-Nous</a>
+            <a href="contactform.php" class="btn btn-primary">Contactez-Nous</a>
         </div>
     </section>
 
@@ -108,7 +110,7 @@
                             <h5 class="card-title">Etudes statistiques et socioéconomiques</h5>
                             <p class="card-text">Notre agence se spécialise dans les études statistiques et marketing,
                                 utilisant des logiciels spécifiques pour guider votre succès</p>
-                            <a href="services.html" class="btn btn-primary">En savoir plus</a>
+                            <a href="services.php" class="btn btn-primary">En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +122,7 @@
                             <h5 class="card-title">Ingénierie économique et financière</h5>
                             <p class="card-text">Notre agence se concentre sur la maturation des projets, de
                                 l’élaboration des business plans à l’exécution et au suivi-évaluation.</p>
-                            <a href="services.html" class="btn btn-primary">En savoir plus</a>
+                            <a href="services.php" class="btn btn-primary">En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -133,7 +135,7 @@
                             <p class="card-text">Notre service se concentre sur le développement de sites web, de
                                 logiciels personnalisés et sur les systèmes d’information géographique et la
                                 cartographie.</p>
-                            <a href="services.html" class="btn btn-primary">En savoir plus</a>
+                            <a href="services.php" class="btn btn-primary">En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -452,7 +454,7 @@
                             class="fa-sharp fa-solid fa-envelope icon"></i></a>
                     <a href="https://www.linkedin.com/company/tdr-consuling-sarl/"><i
                             class="fa-brands fa-linkedin icon"></i></a>
-                    <a href="https://wa.me/671307052/"><i class="fa-brands fa-whatsapp icon"></i></a>
+                    <a href="https://wa.me/+237671307052/"><i class="fa-brands fa-whatsapp icon"></i></a>
                 </div>
             </div>
         </div>

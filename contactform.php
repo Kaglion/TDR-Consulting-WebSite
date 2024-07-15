@@ -1,3 +1,6 @@
+<?php session_start();
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,16 +44,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link " href="index.html"><i class="bi bi-house-fill"></i> Accueil</a>
+              <a class="nav-link " href="index.php"><i class="bi bi-house-fill"></i> Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="apropos.html"><i class="bi bi-people-fill"></i> A Propos De Nous</a>
+              <a class="nav-link" href="apropos.php"><i class="bi bi-people-fill"></i> A Propos De Nous</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html"><i class="bi bi-card-text"></i> Services</a>
+              <a class="nav-link" href="services.php"><i class="bi bi-card-text"></i> Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
+              <a class="nav-link" href="blog.php"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link tapcolor" href="#"><i class="bi bi-telephone-fill"></i> Contactez-Nous</a>
@@ -84,24 +87,24 @@
         </div>
         <!-- Contact Form -->
         <div class="col-lg-6 mb-4">
-          <form>
-            <div class="mb-3">
-              <input type="text" class="form-control" id="name" placeholder="Nom*">
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" id="email" placeholder="Email*">
-            </div>
-            <div class="mb-3">
-              <input type="tel" class="form-control" id="phone" placeholder="Numéro de téléphone">
-            </div>
-            <div class="mb-3">
-              <input type="text" class="form-control" id="subject" placeholder="Objet*">
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control" id="message" rows="5" placeholder="Besoin*"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Envoyer</button>
-          </form>
+        <form action="contact_tdr/send_email.php" method="POST">
+          <div class="mb-3">
+            <input type="text" class="form-control" name="name" id="name" placeholder="Nom*" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email*" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Numéro de téléphone">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet*" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Besoin*" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100" id="send">Envoyer</button>
+        </form>
         </div>
       </div>
     </div>

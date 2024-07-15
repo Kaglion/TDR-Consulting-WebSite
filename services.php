@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php session_start(); ?>
+
+<!DOCTYPE php>
+<php lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -40,21 +42,21 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html"><i class="bi bi-house-fill"></i> Accueil</a>
+                            <a class="nav-link" href="index.php"><i class="bi bi-house-fill"></i> Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="apropos.html"><i class="bi bi-people-fill"></i> A Propos De
+                            <a class="nav-link" href="apropos.php"><i class="bi bi-people-fill"></i> A Propos De
                                 Nous</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tapcolor" href="services.html"><i class="bi bi-card-text"></i>
+                            <a class="nav-link tapcolor" href="services.php"><i class="bi bi-card-text"></i>
                                 Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
+                            <a class="nav-link" href="blog.php"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contactform.html"><i class="bi bi-telephone-fill"></i>
+                            <a class="nav-link" href="contactform.php"><i class="bi bi-telephone-fill"></i>
                                 Contactez-Nous</a>
                         </li>
                     </ul>
@@ -340,4 +342,4 @@ de collecte associés.</p>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 
-</html>
+</php>

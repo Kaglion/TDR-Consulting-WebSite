@@ -37,20 +37,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link " href="index.html"><i class="bi bi-house-fill"></i> Accueil</a>
+                            <a class="nav-link " href="index.php"><i class="bi bi-house-fill"></i> Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="apropos.html"><i class="bi bi-people-fill"></i> A Propos De
+                            <a class="nav-link" href="apropos.php"><i class="bi bi-people-fill"></i> A Propos De
                                 Nous</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html"><i class="bi bi-card-text"></i> Services</a>
+                            <a class="nav-link" href="services.php"><i class="bi bi-card-text"></i> Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link tapcolor" href="#"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="contactform.html"><i class="bi bi-telephone-fill"></i>
+                            <a class="nav-link " href="contactform.php"><i class="bi bi-telephone-fill"></i>
                                 Contactez-Nous</a>
                         </li>
                     </ul>
