@@ -8,43 +8,16 @@ body {
   background-color: #f8f9fa;
 }
 
-.top-bar {
-  background-color: #fafafa;
-  display: flex;
-  justify-content: space-between;
-  padding: 4px;
-}
-.top-bar span {
-  font-size: 18px;
-  margin-left: 2rem;
-}
-
-.top-bar-icons {
-  display: flex;
-  margin: 0.5rem 1rem;
-  gap: 2rem;
-  cursor: pointer;
-}
-.top-bar-icons a {
-  color: #a5a5a5;
-}
-
 nav {
   background-color: #ffffff;
 }
 
 #navbarNav {
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .nav-item a {
   color: #515151;
-}
-
-.logo {
-  height: 8%;
-  width: 8%;
-  margin: 0.5% 6% 0.5% 6%;
 }
 
 .nav-link {
@@ -69,7 +42,7 @@ ul li:hover {
   text-align: center;
 }
 .row {
-  color: #9a9a9a;
+  color: #000000;
 }
 .form-control,
 .btn {
@@ -95,7 +68,7 @@ ul li:hover {
   .logo {
     max-width: 300px;
   }
-  .top-bar span {
-    font-size: 12px;
+    .navbar-brand span {
+    display: none;
   }
 }

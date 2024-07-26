@@ -17,25 +17,18 @@
 
 <body>
     <div class="header">
-        <div class="top-bar">
-            <span class="fw-medium">Bienvenue aux services de consultation du TDR Sarl</span>
-            <div class="top-bar-icons">
-                <a href="mailto:cabinet.tdr.consulting@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
-                <a href="https://www.facebook.com/share/wyy9BJZTiQ34b3Mn/?mibextid=qi2Omg"><i
-                        class="bi bi-facebook"></i> </a>
-                <a href="https://www.linkedin.com/company/tdr-consuling-sarl/"><i class="bi bi-linkedin"></i></a>
-            </div>
-        </div>
 
         <nav class="navbar navbar-expand-lg  ">
             <div class="container-fluid">
-                <img src="img/logo.jpg" alt="logo" class="logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"> </span>
+                <a class="navbar-brand fs-4 fw-medium text-info" href="#">
+                    <img src="img/logo.jpg" alt="Logo" class="d-inline-block img-fluid" style="max-height: 50px;">
+                    <span> TDR Consulting Sarl</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation" ">
+                    <span class=" navbar-toggler-icon"> </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav fw-medium ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.php"><i class="bi bi-house-fill"></i> Accueil</a>
                         </li>
@@ -44,10 +37,10 @@
                                 De Nous</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.php"><i class="bi bi-card-text"></i> Services</a>
+                            <a class="nav-link" href="services.php"><i class="bi bi-card-text"></i> Nos Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.php"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
+                            <a class="nav-link" href="blog.php"><i class="bi bi-journal-bookmark-fill"></i> Actualite</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contactform.php"><i class="bi bi-telephone-fill"></i>
@@ -66,58 +59,42 @@
         <div class="container">
             <div class="row align-items-center mb-5">
                 <div class="col-lg-6 about-text">
-                    <h2 class="text-secondary">À propos de nous</h2>
-                    <p>Chez TDR Consulting SARL, nous sommes une équipe de consultants passionnés et expérimentés dédiés
-                        à aider les entreprises de toutes tailles à atteindre leurs objectifs. Nous combinons notre
-                        connaissance approfondie de l'industrie avec des stratégies innovantes pour fournir des
-                        solutions sur mesure qui stimulent la croissance et le succès.</p>
-                    <p>Notre structure SARL (Société à Responsabilité Limitée) garantit la transparence et la
-                        responsabilité, vous donnant ainsi la tranquillité d'esprit de travailler avec un partenaire
-                        fiable. Nous sommes engagés à bâtir des relations solides avec nos clients, en prenant le temps
-                        de comprendre leurs besoins et défis uniques</p>
-                    <p>Que vous soyez une startup cherchant des conseils ou une entreprise établie cherchant à porter
-                        vos opérations au niveau supérieur, TDR Consulting SARL a l'expertise et les ressources pour
-                        vous aider à atteindre vos aspirations.</p>
-
+                    <h3>TDR Consulting Sarl, solution efficace et efficiente à vos besoins stratégiques et opérationnels
+                    </h3>
+                    <p>Le Cabinet « TDR Consulting Sarl » est un bureau d’études puluridiscilipnaires dont les activités sont orientées principalement dans les domaines suivants : statistique, cartographie-SIG, informatique, économie, management des projets, environnement, intermédiation des affaires et formation continue. Nous disposons d’atouts considérables dans notre champ d’action permettant de concevoir des solutions personnalisées, performantes adaptées aux besoins des clients.
+                    </p>
+                    <p>Pour chaque mission, TDR Consulting Sarl met en place une équipe projet placée sous la supervision de l’Administrateur Général. La cohésion entre les membres de l’équipe soutenue par notre savoir-faire, notre forte expérience permet de travailler dans un climat d’échange permanent à l’effet d’un meilleur rendement ;
+                    </p>
                 </div>
 
                 <div class="col-lg-6 about-image">
                     <img src="img/background.jpeg" alt="About-img">
                 </div>
+                <p class="mt-2">De plus, la forte prise en compte de l’approche genre, ainsi que notre bilinguisme contribuent grandement à la satisfaction de nos clients <br>
+                    Nos experts diplômés des grandes écoles nationales et internationales disposent d’une solide expérience dans les secteurs public, privé et social.
+                </p>
+
+                <h3 class=" mt-4">NOS AVANTAGES STRATEGIQUES</h3>
+                <p class="mt-2">Le Cabinet TDR Consulting Sarl présente de nombreux avantages qui font de lui un prestataire de choix :</p>
+                <ul>
+                    <li class="fw-medium">Agir à proximité de nos cibles:</li>
+                    <p>la proximité est une condition indispensable à la compréhension des besoins de nos cibles afin de mieux orienter nos actions;</p>
+                    <li class="fw-medium">Proposer des services personnalisés à la cible:</li>
+                    <p>nous développons des solutions spécifiques en tenant compte des besoins et attentes du client;</p>
+                    <li class="fw-medium">Notre flexibilité: </li>
+                    <p>nous nous plions à vos désirs soient-ils pour le travail les week-ends, les jours fériés. </p>
+                    <li class="fw-medium">La sécurité de vos données: </li>
+                    <p>la confidentialité des données est un point d’honneur au sein de notre entreprise. A cet effet, nous avons mis sur pieds de nombreuses procédures de sécurité;</p>
+                    <li class="fw-medium">Être attentif aux résultats de nos actions : </li>
+                    <p>le suivi et l’évaluation de nos actions sont des gages de performance au Cabinet TDR Consulting Sarl;</p>
+                    <li class="fw-medium">Faire le pari de la confiance :</li>
+                    <p>nous faisons confiance à nos équipes et à nos partenaires ;</p>
+                    <li class="fw-medium">Notre représentation Territoriale:</li>
+                    <p>Nous disposions au Cameroun et dans 9 Pays africains une équipe d’experts régulièrement recyclés par nos soins.
+                    </p>
 
             </div>
-            <div class="row mb-5">
-                <div class="col-lg-6">
-                    <h2 class="text-secondary">Nos buts</h2>
-                    <p>Nous visons à;</p>
-                    <ul>
-                        <li>Fournir des services de conseil de premier ordre.</li>
-                        <li>Générer une croissance mesurable pour les clients.</li>
-                        <li>Favoriser les relations clients à long terme.</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="text-secondary">Notre mission</h2>
-                    <p>Notre mission est de donner aux entreprises les informations et les stratégies nécessaires pour
-                        atteindre leur plein potentiel.</p>
-                </div>
-            </div>
-            <div class="row mb-5">
-                <div class="col-lg-6">
-                    <h2 class="text-secondary">Expérience</h2>
-                    <p>Avec plus de 10 ans d’expérience dans le secteur du conseil, notre équipe a fait ses preuves
-                        de succès.</p>
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="text-secondary">Nos objectifs</h2>
-                    <p>Notre objectif est de fournir :</p>
-                    <ul>
-                        <li>Des solutions personnalisées pour chaque client.</li>
-                        <li>Informations et stratégies exploitables.</li>
-                        <li>Soutien et développement continus.</li>
-                    </ul>
-                </div>
-            </div>
+
         </div>
     </section>
 
