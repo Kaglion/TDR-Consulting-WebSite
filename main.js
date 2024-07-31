@@ -70,27 +70,27 @@ ScrollReveal().reveal(".service-item", {
 
   // value animation
 
-  function animateValue(obj, start, end, duration) {
-  let startValue = start;
-  let endValue = end;
-  let duration = duration || 2000;
-  let startTime = performance.now();
+//   function animateValue(obj, start, end, duration) {
+//   let startValue = start;
+//   let endValue = end;
+//   duration = duration || 2000;
+//   let startTime = performance.now();
 
-  function animation(currentTime) {
-    let elapsed = currentTime - startTime;
-    let t = elapsed / duration;
-    let beg = startValue;
-    let change = endValue - startValue;
-    let value = beg + t * change;
-    obj.textContent = Math.round(value);
+//   function animation(currentTime) {
+//     let elapsed = currentTime - startTime;
+//     let t = elapsed / duration;
+//     let beg = startValue;
+//     let change = endValue - startValue;
+//     let value = beg + t * change;
+//     obj.textContent = Math.round(value);
 
-    if (elapsed < duration) {
-      requestAnimationFrame(animation);
-    }
-  }
+//     if (elapsed < duration) {
+//       requestAnimationFrame(animation);
+//     }
+//   }
 
-  requestAnimationFrame(animation);
-}
+//   requestAnimationFrame(animation);
+// }
 
-const countElement = document.getElementById('count');
-animateValue(countElement, 0, 1000, 3000); // Start from 0, end at 1000, duration 3 seconds
+// const countElement = document.getElementById('count');
+// animateValue(countElement, 0, 1000, 3000); // Start from 0, end at 1000, duration 3 seconds
