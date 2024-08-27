@@ -222,7 +222,7 @@
                 </div>
 
                 <div class="text-box fs-6">
-                    <h1 id="count">95%</h1>
+                    <h1 id="count">99,8%</h1>
                     <p>Taux de satisfaction des clients</p>
                 </div>
             </div>
@@ -313,7 +313,7 @@
                                 <div class="swiper-slide"><img src="img/partners/logo8.png" class="image-logo" alt="Logo8">
                                 </div>
                             </div>
-                            <p class="fw-bold">Ministère de la Planification économique et du Développement régional</p>
+                            <p class="fw-bold">Ministère de l'Economie, de la Planification et de l'Aménagement du Territoire    </p>
 
                         </div>
                     </div>
@@ -422,14 +422,14 @@
                                 <div class="swiper-slide "><img src="img/partners/logo19.png" class="image-logo" alt="Logo19">
                                 </div>
                             </div>
-                            <p class="fw-bold">American Psychological Association </p>
+                            <p class="fw-bold">Action pour la Paix et le Développement</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="box">
                             <div class="partner-logo">
                                 <div class="swiper-slide "><img src="img/partners/logo20.png" class="image-logo" alt="Logo20">
-                                </div>
+                                </div> 
                             </div>
                             <p class="fw-bold">RO3D</p>
 
