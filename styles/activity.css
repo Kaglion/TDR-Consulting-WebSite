@@ -1,0 +1,126 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+} */
+
+.activities-section {
+  max-width: 100%;
+  width: 100%;
+  padding: 20px;
+  height: 800px;
+  margin-bottom: 120px;
+}
+
+.activities-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.activities-container {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux cartes de passer à la ligne */
+  gap: 15px; /* Espace entre les cartes */ 
+}
+
+
+.activity-card {
+  /* background-color: #f4f4f4; */
+  padding: 10px;
+  border-radius: 8px;    
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+  transition: box-shadow 0.3s;
+  margin: 10px;
+  flex: 1 1 300px; /* Les cartes prendront une largeur minimum de 300px */
+  box-sizing: border-box;
+}
+
+.fb-post{
+  width: 355px !important;
+  padding: 10px !important;
+}
+.activity-card:hover {
+  /* box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); */
+}
+blockquote{
+  background-color: #d08383;
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.activity-author {
+  font-weight: bold;
+  color: #333;
+  font-size: medium;
+}
+
+.activity-date {
+  margin-left: auto;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.activity-content {
+  font-size: 1em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.activity-image {
+  width: 100%;
+  max-width: 600px; /* Limite la taille de l'image pour les grands écrans */
+  height: 90%; /* Garde les proportions */
+  object-fit: cover; /* Ajuste l'image pour qu'elle couvre l'espace, peut recadrer */
+  border-radius: 8px;
+  margin-top: 10px;
+
+}
+
+.activity-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 10px;
+}
+
+
+ .post {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .post img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .post-content {
+            margin: 10px 0;
+        }
+        .btn-see-more {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-see-more:hover {
+            background-color: #0056b3;
+        }

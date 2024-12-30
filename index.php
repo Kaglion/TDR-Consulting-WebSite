@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" href="img/logo.jpg" type="image/x-icon">
 
+    <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v21.0&appId=4891195140923719"></script>
+
 </head>
 
 <body>
@@ -466,6 +470,50 @@
                 </div>
             </div>
         </div>
+
+
+
+
+        <link rel="stylesheet" href="styles/activity.css">
+
+<div class=" section-home activities-section">
+
+
+  <h2>Nos activités récentes</h2>
+  <div id="activities-container" class="activities-container">
+
+    <!-- <section class="facebook-section">
+      <div class="container">
+          <h2>Suivez-nous sur Facebook</h2>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/cerdgroup27&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+              width="100%" 
+              height="100%" 
+              style="border:none;overflow:hidden" 
+              scrolling="no" 
+              frameborder="0" 
+              allowfullscreen="true"></iframe>
+      </div>
+  </section> -->
+
+    <div class="fb-page activity-card" data-href="https://www.facebook.com/tdrconsultingsarl" data-tabs="timeline" data-width="500"
+      data-height="710" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+      data-show-facepile="true">
+    </div>
+
+
+    <div class="fb-post activity-card" data-href="https://www.facebook.com/tdrconsultingsarl/posts/pfbid0RtTnJZ7VD4MZBn5k5UmqLurkFFf8FbeNuX4n9Pszjmk2ThFd3vjFc8ar4QAwoGYal" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/tdrconsultingsarl/posts/1271297920862575" class="fb-xfbml-parse-ignore"><p>𝐀𝐕𝐈𝐒 𝐃𝐄 𝐑𝐄𝐂𝐑𝐔𝐓𝐄𝐌𝐄𝐍𝐓 𝐃𝐄 𝟓𝟎 𝐂𝐎𝐌𝐌𝐄𝐑𝐂𝐈𝐀𝐔𝐗 
+
+TDR Consulting Sarl-Cabinet d’Etudes-Conseil lance un avis de recrutement de 50...</p>Publiée par <a href="https://www.facebook.com/tdrconsultingsarl">TDR Consulting Sarl</a> sur&nbsp;<a href="https://www.facebook.com/tdrconsultingsarl/posts/1271297920862575">Dimanche 21 juillet 2024</a></blockquote></div>
+
+ 
+
+<div class="fb-post activity-card" data-href="https://www.facebook.com/tdrconsultingsarl/posts/pfbid02mdCdxThs77E1jUSQLXtKot9D4snAbYUHjLW9nHUBbX5izfkm1WCUSp8FgRko65NGl" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/tdrconsultingsarl/posts/1185407546118280" class="fb-xfbml-parse-ignore"><p>𝙎𝙏𝘼𝙏𝙄𝙎𝙏𝙄𝙌𝙐𝙀 : 𝘼𝙑𝘼𝙉𝙏𝘼𝙂𝙀𝙎 𝙀𝙏 𝘿É𝘽𝙊𝙐𝘾𝙃É𝙎
+𝙇𝙖 𝙨𝙩𝙖𝙩𝙞𝙨𝙩𝙞𝙦𝙪𝙚 est une discipline en pleine expansion et à fort potentiel...</p>Publiée par <a href="https://www.facebook.com/tdrconsultingsarl">TDR Consulting Sarl</a> sur&nbsp;<a href="https://www.facebook.com/tdrconsultingsarl/posts/1185407546118280">Mardi 19 mars 2024</a></blockquote></div>
+
+
+  </div>
+
+</div>
     </section>
 
     <!-- Footer Section -->
