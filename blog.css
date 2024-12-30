@@ -28,7 +28,7 @@ nav {
 }
 
 #navbarNav {
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .nav-item a {
@@ -89,7 +89,7 @@ body {
   .logo {
     max-width: 300px;
   }
-  .top-bar span {
-    font-size: 12px;
+    .navbar-brand span {
+    display: none;
   }
 }

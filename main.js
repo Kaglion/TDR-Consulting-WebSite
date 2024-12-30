@@ -47,10 +47,50 @@ window.addEventListener("scroll", function () {
 // Initialize ScrollReveal
 ScrollReveal().reveal(".service-item", {
   duration: 1000,
-  distance: "50px",
+  distance: "80px",
   easing: "ease-in-out",
   origin: "bottom",
   reset: true,
 });
 
 //send message
+
+
+
+   // Show the modal when the page loads
+    window.onload = function() {
+        document.getElementById('popupModal').style.display = 'block';
+    };
+
+    // Close the modal when the close button is clicked
+    document.getElementById('closePopup').onclick = function() {
+        document.getElementById('popupModal').style.display = 'none';
+    };
+
+
+  // value animation
+
+//   function animateValue(obj, start, end, duration) {
+//   let startValue = start;
+//   let endValue = end;
+//   duration = duration || 2000;
+//   let startTime = performance.now();
+
+//   function animation(currentTime) {
+//     let elapsed = currentTime - startTime;
+//     let t = elapsed / duration;
+//     let beg = startValue;
+//     let change = endValue - startValue;
+//     let value = beg + t * change;
+//     obj.textContent = Math.round(value);
+
+//     if (elapsed < duration) {
+//       requestAnimationFrame(animation);
+//     }
+//   }
+
+//   requestAnimationFrame(animation);
+// }
+
+// const countElement = document.getElementById('count');
+// animateValue(countElement, 0, 1000, 3000); // Start from 0, end at 1000, duration 3 seconds

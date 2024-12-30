@@ -21,28 +21,21 @@
 
 <body>
 
-  <div class="header">
-    <div class="top-bar">
-      <span class="fw-medium">Bienvenue aux services de consultation du TDR Sarl</span>
-
-      <!-- Top bar -->
-      <div class="top-bar-icons">
-        <a href="mailto:cabinet.tdr.consulting@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
-        <a href="https://www.facebook.com/share/wyy9BJZTiQ34b3Mn/?mibextid=qi2Omg"><i class="bi bi-facebook"></i> </a>
-        <a href="https://www.linkedin.com/company/tdr-consuling-sarl/"><i class="bi bi-linkedin"></i></a>
-      </div>
-    </div>
-
+   <div class="header">
+    
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg  ">
       <div class="container-fluid">
-        <img src="img/logo.jpg" alt="logo" class="logo">
+        <a class="navbar-brand fs-4 fw-medium text-info" href="#">
+                    <img src="img/logo.jpg" alt="Logo" class="d-inline-block img-fluid" style="max-height: 50px;">
+                    <span> TDR Consulting Sarl</span>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"> </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+                    <ul class="navbar-nav fw-medium ms-auto">
             <li class="nav-item">
               <a class="nav-link " href="index.php"><i class="bi bi-house-fill"></i> Accueil</a>
             </li>
@@ -50,10 +43,10 @@
               <a class="nav-link" href="apropos.php"><i class="bi bi-people-fill"></i> A Propos De Nous</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.php"><i class="bi bi-card-text"></i> Services</a>
+              <a class="nav-link" href="services.php"><i class="bi bi-card-text"></i>Nos Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.php"><i class="bi bi-journal-bookmark-fill"></i> Blog</a>
+              <a class="nav-link" href="blog.php"><i class="bi bi-journal-bookmark-fill"></i> Actualite</a>
             </li>
             <li class="nav-item">
               <a class="nav-link tapcolor" href="#"><i class="bi bi-telephone-fill"></i> Contactez-Nous</a>
@@ -71,16 +64,16 @@
     <div id="map" style="width: 100%; height: 400px;"></div>
 
     <div class="container bg-white ">
-      <h1 class="contact-title p-2 text-secondary">Contactez-Nous</h1>
+      <h1 class="contact-title p-2">Contactez-Nous</h1>
       <div class="row p-4">
         <!-- Contact Information -->
         <div class="col-lg-6 mb-4">
-          <h4 class="text-secondary">Nos Coordonnées</h4>
+          <h4 class="text-black">Nos Coordonnées</h4>
           <p><strong><i class="bi bi-geo-alt-fill"></i> Adresse:</strong> Siège, Yaoundé, Carrefour Biyem-Assi, Immeuble
             Afriland first bank</p>
           <p><strong><i class="bi bi-telephone-fill"></i> Téléphone:</strong> +237 650 39 28 76 - 656 23 37 27.</p>
           <p><strong><i class="bi bi-envelope-at-fill"></i> Email:</strong> cabinet.tdr.consulting@gmail.com</p>
-          <h4 class="text-secondary">Heures de travail</h4>
+          <h4 class="text-black">Heures de travail</h4>
           <p>Lundi - vendredi : 8h - 18h</p>
           <p>Samedi : 9h - 14h</p>
           <p>Dimanche : Fermé</p>
@@ -95,7 +88,7 @@
             <input type="email" class="form-control" name="email" id="email" placeholder="Email*" required>
           </div>
           <div class="mb-3">
-            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Numéro de téléphone">
+            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Numéro Whatsapp">
           </div>
           <div class="mb-3">
             <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet*" required>
